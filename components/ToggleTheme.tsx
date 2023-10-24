@@ -3,7 +3,7 @@ import {useState} from "react";
 import {DarkModeSwitch} from "react-toggle-dark-mode";
 
 const ToogleTheme = () => {
-  const [isDarkMode, setDarkMode] = useState(false);
+  const [isDarkMode, setDarkMode] = useState(true);
   const toggleDarkMode = (checked: boolean) => {
     if (checked) {
       document.documentElement.classList.add("dark");
@@ -13,7 +13,7 @@ const ToogleTheme = () => {
     setDarkMode(checked);
   };
   return (
-    <div className="absolute bottom-0 right-12">
+    <div className="fixed bottom-0 right-12">
       <DarkModeSwitch
         style={{marginBottom: "2rem"}}
         checked={isDarkMode}
