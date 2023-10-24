@@ -41,16 +41,22 @@ body {
 
 .cube {
   position: relative;
-  width: 250px;
-  height: 250px;
   transform-style: preserve-3d;
   animation: rotate 6s linear infinite;
 }
 
-.cube > div {
-  position: absolute;
+.cubeSm {
   width: 250px;
   height: 250px;
+}
+
+.cubeLg {
+  width: 150px;
+  height: 150px;
+}
+
+.cube > div {
+  position: absolute;
   opacity: 0.9;
   background: linear-gradient(to right, #09adc8, #001f4e);
 }
@@ -59,24 +65,48 @@ body {
   transform: translateZ(200px);
 }
 
+.s1m {
+  transform: translateZ(100px);
+}
+
 .s2 {
   transform: rotateY(90deg) translateZ(200px);
+}
+
+.s2m {
+  transform: rotateY(90deg) translateZ(100px);
 }
 
 .s3 {
   transform: rotateY(180deg) translateZ(200px);
 }
 
+.s3m {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
 .s4 {
   transform: rotateX(90deg) translateZ(200px);
+}
+
+.s4m {
+  transform: rotateX(90deg) translateZ(100px);
 }
 
 .s5 {
   transform: rotateY(-90deg) translateZ(200px);
 }
 
+.s5m {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
 .s6 {
   transform: rotateX(-90deg) translateZ(200px) rotate(180deg);
+}
+
+.s6m {
+  transform: rotateX(-90deg) translateZ(100px) rotate(180deg);
 }
 
 @keyframes rotate {

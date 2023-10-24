@@ -105,7 +105,7 @@ const HeroSection = () => {
             }}
           />
         </div>
-        <section className="text-gray-600 body-font sm:px-24 mt-36">
+        <section className="text-gray-600 body-font sm:px-24 mt-10 md:mt-32">
           <div className="container mx-auto flex px-2 sm:px-5 py-24 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-48 md:pr-24 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font sm:text-5xl text-4xl mb-4 font-medium text-gray-900">
@@ -141,15 +141,15 @@ const HeroSection = () => {
                 </a>
               </div>
             </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mt-36 sm:mt-0">
-              <div className="container flex justify-center">
-                <div className="cube">
-                  <div className="s1"></div>
-                  <div className="s2"></div>
-                  <div className="s3"></div>
-                  <div className="s4"></div>
-                  <div className="s5"></div>
-                  <div className="s6"></div>
+            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mt-36 md:mt-0">
+              <div className="container flex justify-center sm:scale-150">
+                <div className="cube cubeLg sm:cubeSm">
+                  <div className="s1m sm:s1 cubeLg sm:cubeSm"></div>
+                  <div className="s2m sm:s2 cubeLg sm:cubeSm"></div>
+                  <div className="s3m sm:s3 cubeLg sm:cubeSm"></div>
+                  <div className="s4m sm:s4 cubeLg sm:cubeSm"></div>
+                  <div className="s5m sm:s5 cubeLg sm:cubeSm"></div>
+                  <div className="s6m sm:s6 cubeLg sm:cubeSm"></div>
                 </div>
               </div>
               {/* <img
