@@ -6,6 +6,7 @@ import {navigation, profile} from "@/utils/profile";
 import {Dialog} from "@headlessui/react";
 import {useState} from "react";
 import {TypeAnimation} from "react-type-animation";
+import AnimatedObject from "./AnimatedObject";
 
 const HeroSection = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -71,7 +72,7 @@ const HeroSection = () => {
                 <CloseIcon />
               </button>
             </div>
-            <div>
+            <div className="mt-6">
               {navigation.map((item) => (
                 <div key={item.name} className="mb-5">
                   <a
@@ -137,16 +138,7 @@ const HeroSection = () => {
               </div>
             </div>
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mt-36 md:mt-0">
-              <div className="container flex justify-center sm:scale-150">
-                <div className="cube cubeLg sm:cubeSm">
-                  <div className="s1m sm:s1 cubeLg sm:cubeSm"></div>
-                  <div className="s2m sm:s2 cubeLg sm:cubeSm"></div>
-                  <div className="s3m sm:s3 cubeLg sm:cubeSm"></div>
-                  <div className="s4m sm:s4 cubeLg sm:cubeSm"></div>
-                  <div className="s5m sm:s5 cubeLg sm:cubeSm"></div>
-                  <div className="s6m sm:s6 cubeLg sm:cubeSm"></div>
-                </div>
-              </div>
+              <AnimatedObject />
               {/* <img
                 className="object-cover object-center rounded"
                 alt="hero"
