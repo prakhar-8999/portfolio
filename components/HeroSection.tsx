@@ -11,7 +11,7 @@ const HeroSection = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white dark:bg-black">
+    <div className="bg-white dark:bg-black flex justify-center items-center">
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
@@ -105,8 +105,8 @@ const HeroSection = () => {
             }}
           />
         </div>
-        <section className="text-gray-600 body-font sm:px-24 mt-10 md:mt-32">
-          <div className="container mx-auto flex px-2 sm:px-5 py-24 md:flex-row flex-col items-center">
+        <section className="text-gray-600 body-font mt-10 md:mt-32">
+          <div className="container mx-auto flex px-2 sm:px-5 pb-24 md:flex-row flex-col items-center">
             <div className="lg:flex-grow md:w-1/2 lg:pr-48 md:pr-24 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
               <h1 className="title-font sm:text-5xl text-4xl mb-4 font-medium text-gray-900">
                 <span className="text-black dark:text-white font-semibold">
@@ -121,7 +121,7 @@ const HeroSection = () => {
               </h1>
               <p className="mb-8 leading-relaxed text-black dark:text-gray-400 font-medium">
                 <TypeAnimation
-                  splitter={(str) => str.split(/(?= )/)} // 'Lorem ipsum dolor' -> ['Lorem', ' ipsum', ' dolor']
+                  splitter={(str) => str.split(/(?= )/)}
                   sequence={[profile.description]}
                   speed={{type: "keyStrokeDelayInMs", value: 110}}
                   omitDeletionAnimation={true}

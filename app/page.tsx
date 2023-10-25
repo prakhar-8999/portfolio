@@ -3,10 +3,10 @@ import ToogleTheme from "@/components/ToggleTheme";
 
 export default function Home() {
   return (
-    <div>
+    <>
       {/* <Header /> */}
       <HeroSection />
       <ToogleTheme />
-    </div>
+    </>
   );
 }

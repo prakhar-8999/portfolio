@@ -26,13 +26,11 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
-/* body {
-  margin: 0;
-  background: #000;
+body {
   height: 100vh;
   display: grid;
   place-items: center;
-} */
+}
 
 /* .container {
   perspective: 1000px;
