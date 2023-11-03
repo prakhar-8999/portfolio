@@ -44,13 +44,13 @@ body {
 }
 
 .cubeSm {
-  width: 160px;
-  height: 160px;
+  width: 130px;
+  height: 130px;
 }
 
 .cubeLg {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 }
 
 .cube > div {
@@ -60,7 +60,7 @@ body {
 }
 
 .s1m {
-  transform: translateZ(160px);
+  transform: translateZ(130px);
 }
 
 .s1 {
@@ -68,7 +68,7 @@ body {
 }
 
 .s2m {
-  transform: rotateY(90deg) translateZ(160px);
+  transform: rotateY(90deg) translateZ(130px);
 }
 
 .s2 {
@@ -76,7 +76,7 @@ body {
 }
 
 .s3m {
-  transform: rotateY(180deg) translateZ(160px);
+  transform: rotateY(180deg) translateZ(130px);
 }
 
 .s3 {
@@ -84,7 +84,7 @@ body {
 }
 
 .s4m {
-  transform: rotateX(90deg) translateZ(160px);
+  transform: rotateX(90deg) translateZ(130px);
 }
 
 .s4 {
@@ -92,7 +92,7 @@ body {
 }
 
 .s5m {
-  transform: rotateY(-90deg) translateZ(160px);
+  transform: rotateY(-90deg) translateZ(130px);
 }
 
 .s5 {
@@ -100,7 +100,7 @@ body {
 }
 
 .s6m {
-  transform: rotateX(-90deg) translateZ(160px) rotate(180deg);
+  transform: rotateX(-90deg) translateZ(130px) rotate(180deg);
 }
 
 .s6 {

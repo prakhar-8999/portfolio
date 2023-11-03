@@ -1,5 +1,5 @@
 import HeroSection from "@/components/HeroSection";
-import Skills from "@/components/Skills";
+import Services from "@/components/Services";
 import ToogleTheme from "@/components/ToggleTheme";
 
 export default function Home() {
@@ -9,7 +9,8 @@ export default function Home() {
       <HeroSection />
       <ToogleTheme />
       {/* <ProjectsScreenShots /> */}
-      <Skills />
+      {/* <Skills /> */}
+      <Services />
     </div>
   );
 }

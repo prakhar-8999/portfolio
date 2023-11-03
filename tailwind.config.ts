@@ -18,6 +18,7 @@ const config: Config = {
         primary: "#e33e3e",
         gradientstart: "#f69dc2",
         gradientFinish: "#9089fc",
+        substitute: "#e84646",
       },
     },
   },
