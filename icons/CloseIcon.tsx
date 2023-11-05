@@ -1,5 +1,3 @@
-import {colors} from "@/libs/colors";
-
 const CloseIcon = () => {
   return (
     <>
@@ -19,7 +17,7 @@ const CloseIcon = () => {
         height="24"
         viewBox="0 0 24 24"
         className="block sm:hidden"
-        style={{fill: colors.primary, transform: "", msFilter: ""}}
+        style={{fill: "red", transform: "", msFilter: ""}}
       >
         <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
       </svg>

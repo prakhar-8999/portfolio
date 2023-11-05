@@ -1,6 +1,5 @@
 import HeroSection from "@/components/HeroSection";
 import Services from "@/components/Services";
-import ThingsIDo from "@/components/ThingsIDo";
 import ToogleTheme from "@/components/ToggleTheme";
 
 export default function Home() {
@@ -12,7 +11,6 @@ export default function Home() {
       {/* <ProjectsScreenShots /> */}
       {/* <Skills /> */}
       <Services />
-      <ThingsIDo />
     </div>
   );
 }

@@ -13,7 +13,7 @@ const ToogleTheme = () => {
     setDarkMode(checked);
   };
   return (
-    <div className="fixed bottom-0 right-12" style={{zIndex: 1000}}>
+    <div className="fixed bottom-0 right-12">
       <DarkModeSwitch
         style={{marginBottom: "2rem"}}
         checked={isDarkMode}
