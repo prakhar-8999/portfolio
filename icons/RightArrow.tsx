@@ -1,3 +1,5 @@
+import {colors} from "@/libs/colors";
+
 const RightArrow = () => {
   return (
     <svg
@@ -6,7 +8,7 @@ const RightArrow = () => {
       height="24"
       viewBox="0 0 24 24"
       style={{
-        fill: "red",
+        fill: colors.primary,
         transform: "",
         msFilter: "",
         marginTop: "4px",

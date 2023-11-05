@@ -1,3 +1,5 @@
+import {colors} from "@/libs/colors";
+
 const MenuIcon = () => {
   return (
     <>
@@ -17,7 +19,7 @@ const MenuIcon = () => {
         height="24"
         viewBox="0 0 24 24"
         className="block sm:hidden"
-        style={{fill: "red", transform: "", msFilter: ""}}
+        style={{fill: colors.primary, transform: "", msFilter: ""}}
       >
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>
