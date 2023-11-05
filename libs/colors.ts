@@ -1,8 +1,8 @@
 "use client";
 
-export const webColors = [
+const webColors = [
   "#fcd34d",
-  "#e33e3e",
+  // "#e33e3e",
   "#a3e635",
   "#22d3ee",
   "#818cf8",
@@ -16,4 +16,4 @@ const colors = {
   substitute: "#e84646",
 };
 
-export {colors};
+export {colors, webColors};
