@@ -1,5 +1,9 @@
+// "use client";
 import type {Config} from "tailwindcss";
-import {colors} from "./libs/colors";
+import {getRunTimeColor} from "./libs/colors";
+import useColor from "./utils/useColor";
+
+const primary = useColor.getState().primary;
 
 const config: Config = {
   content: [
@@ -10,12 +14,7 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      colors: colors,
+      colors: getRunTimeColor(),
     },
   },
   plugins: [],

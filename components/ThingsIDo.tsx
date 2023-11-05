@@ -16,11 +16,12 @@ const ThingsIDo = () => {
           <div className="flex justify-center md:justify-end mt-12 md:mt-0">
             <motion.div
               initial={{scale: 0}}
-              animate={{rotate: 360, scale: 1}}
+              whileInView={{rotate: 360, scale: 1}}
+              exit={{scale: 0}}
               transition={{
                 type: "spring",
                 stiffness: 260,
-                damping: 100,
+                damping: 50,
               }}
               className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-900 dark:border-gray-700"
             >
@@ -33,7 +34,7 @@ const ThingsIDo = () => {
               <button
                 type="button"
                 onClick={() => window.open(thingsIdo.resumeLink)}
-                className="inline-flex items-center px-3 py-2 text-sm  text-center text-black font-semibold bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-red-300"
+                className="inline-flex items-center px-3 py-2 text-sm  text-center text-black font-semibold bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
               >
                 Download
                 <RightArrow />

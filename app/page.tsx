@@ -1,10 +1,21 @@
 "use client";
 import HeroSection from "@/components/HeroSection";
+import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import ThingsIDo from "@/components/ThingsIDo";
 import ToogleTheme from "@/components/ToggleTheme";
+import {webColors} from "@/libs/colors";
+import useColor from "@/utils/useColor";
+import {useEffect} from "react";
 
 export default function Home() {
+  useEffect(() => {
+    useColor.setState({
+      primary: webColors[Math.floor(Math.random() * webColors.length)],
+    });
+    console.log(webColors[Math.floor(Math.random() * webColors.length)]);
+  }, []);
+
   return (
     <div className="px-4 md:px-24">
       {/* <Header /> */}
@@ -14,6 +25,7 @@ export default function Home() {
       {/* <Skills /> */}
       <Services />
       <ThingsIDo />
+      <Projects />
     </div>
   );
 }

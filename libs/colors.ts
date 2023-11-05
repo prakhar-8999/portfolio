@@ -16,4 +16,6 @@ const colors = {
   substitute: "#e84646",
 };
 
-export {colors, webColors};
+const getRunTimeColor = () => colors;
+
+export {colors, getRunTimeColor, webColors};

@@ -1,3 +1,5 @@
+import useColor from "@/utils/useColor";
+
 const CloseIcon = () => {
   return (
     <>
@@ -7,7 +9,7 @@ const CloseIcon = () => {
         height="24"
         viewBox="0 0 24 24"
         className="hidden sm:block"
-        style={{fill: "rgba(0, 0, 0, 1)", transform: "", msFilter: ""}}
+        fill={useColor.getState().primary}
       >
         <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
       </svg>
@@ -17,7 +19,7 @@ const CloseIcon = () => {
         height="24"
         viewBox="0 0 24 24"
         className="block sm:hidden"
-        style={{fill: "red", transform: "", msFilter: ""}}
+        fill={useColor.getState().primary}
       >
         <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
       </svg>

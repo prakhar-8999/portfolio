@@ -1,3 +1,5 @@
+import useColor from "@/utils/useColor";
+
 const MenuIcon = () => {
   return (
     <>
@@ -7,7 +9,7 @@ const MenuIcon = () => {
         height="24"
         viewBox="0 0 24 24"
         className="hidden sm:block"
-        fill="none"
+        fill={useColor.getState().primary}
       >
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>
@@ -18,7 +20,7 @@ const MenuIcon = () => {
         viewBox="0 0 24 24"
         className="block sm:hidden"
         // style={{fill: "red", transform: "", msFilter: ""}}
-        fill="none"
+        fill={useColor.getState().primary}
       >
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>
