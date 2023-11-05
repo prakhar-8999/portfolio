@@ -82,4 +82,13 @@ const navigation = [
   {name: "Contact", href: "#contact"},
 ];
 
-export {navigation, profile, services, skills};
+const thingsIdo = {
+  description:
+    "I have meticulously refined my expertise in design, strategy, management, creative direction, and development, making these fields my distinct areas of competence. Through numerous projects, I've consistently recognized that optimizing work processes, adept communication, and a solid measure of self-discipline are pivotal to achieving success. It's my unwavering commitment to a robust work ethic that has been the driving force behind my accomplishments spanning a multitude of specializations.",
+  resumeShortDescription:
+    "A well-crafted resume conveys your strengths and career narrative effectively.",
+  resumeLink:
+    "https://drive.google.com/file/d/16CHZUU486IF_4iswJS1Fb8WCnSIswLz9/view?usp=sharing",
+};
+
+export {navigation, profile, services, skills, thingsIdo};

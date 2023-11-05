@@ -58,12 +58,8 @@ const Services = () => {
             ))}
           </div>
           <button
-<<<<<<< Updated upstream
-            className="flex mx-auto mt-16 text-white bg-substitute border-0 py-2 px-8 focus:outline-none hover:bg-primary rounded text-lg"
-=======
             className="flex mx-auto mt-16 text-black bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-primary rounded text-lg z-50"
             style={{zIndex: 1000}}
->>>>>>> Stashed changes
             onClick={() =>
               setStart(
                 start === services.offeredServices.length

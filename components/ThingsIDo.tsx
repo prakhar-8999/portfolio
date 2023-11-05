@@ -11,7 +11,7 @@ const ThingsIDo = () => {
       <div className="relative isolate">
         <div className="grid grid-cols-1 md:grid-cols-2 container px-5 py-24 mx-auto gap-x-12 -mt-36">
           <div className="leading-relaxed text-black dark:text-gray-400 font-medium">
-            {thingsIdo.discription}
+            {thingsIdo.description}
           </div>
           <div className="flex justify-center md:justify-end mt-12 md:mt-0">
             <motion.div
