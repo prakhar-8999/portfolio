@@ -1,3 +1,4 @@
+"use client";
 import HeroSection from "@/components/HeroSection";
 import Services from "@/components/Services";
 import ToogleTheme from "@/components/ToggleTheme";

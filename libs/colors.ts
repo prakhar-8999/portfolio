@@ -1,4 +1,6 @@
-const webColors = [
+"use client";
+
+export const webColors = [
   "#fcd34d",
   "#e33e3e",
   "#a3e635",
@@ -6,8 +8,6 @@ const webColors = [
   "#818cf8",
   "#8b5cf6",
 ];
-
-console.log(webColors[Math.floor(Math.random() * webColors.length)]);
 
 const colors = {
   primary: webColors[Math.floor(Math.random() * webColors.length)],

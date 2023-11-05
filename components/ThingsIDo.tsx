@@ -1,4 +1,5 @@
 "use client";
+import RightArrow from "@/icons/RightArrow";
 import {thingsIdo} from "@/utils/profile";
 import {motion} from "framer-motion";
 import ContentHeader from "./ContentHeader";
@@ -32,24 +33,10 @@ const ThingsIDo = () => {
               <button
                 type="button"
                 onClick={() => window.open(thingsIdo.resumeLink)}
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-red-300"
+                className="inline-flex items-center px-3 py-2 text-sm  text-center text-black font-semibold bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-red-300"
               >
                 Download
-                <svg
-                  className="w-3.5 h-3.5 ml-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
+                <RightArrow />
               </button>
             </motion.div>
           </div>

@@ -53,54 +53,13 @@ const HeroSection = () => {
                 href="#contact"
                 className="flex underline underline-offset-[12px] text-2xl text-primary font-semibold"
               >
-                Connect with me <RightArrow />
+                Connect with me <RightArrow className="ml-4 mt-[10px]" />
               </a>
             </div>
             <div>
               <AnimatedObject />
             </div>
           </div>
-          {/* <section className="text-gray-600 body-font mt-10 md:mt-32">
-          <div className="mx-auto flex px-4 pb-24 md:flex-row flex-col items-center">
-            <div className="lg:flex-grow md:w-1/2 lg:pr-48 md:pr-24 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-              <h1 className="title-font sm:text-5xl text-4xl mb-4 font-medium text-gray-900">
-                <span className="text-black dark:text-white font-semibold">
-                  Hi! I&apos;am &nbsp;
-                </span>
-                <span className="text-primary font-semibold">
-                  {profile.name}
-                </span>{" "}
-                <span className="text-black dark:text-white font-semibold">
-                  and
-                </span>
-              </h1>
-              <p className="mb-8 leading-relaxed text-black dark:text-gray-400 font-medium">
-                <TypeAnimation
-                  splitter={(str) => str.split(/(?= )/)}
-                  sequence={[profile.description]}
-                  speed={{type: "keyStrokeDelayInMs", value: 110}}
-                  omitDeletionAnimation={true}
-                  style={{
-                    fontSize: "1em",
-                    display: "block",
-                    minHeight: "200px",
-                  }}
-                />
-              </p>
-              <div className="flex justify-center mt-10 hover:scale-110 transition">
-                <a
-                  href="#contact"
-                  className="flex underline underline-offset-[12px] text-2xl text-primary font-semibold"
-                >
-                  Connect with me <RightArrow />
-                </a>
-              </div>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mt-36 md:mt-0">
-              <AnimatedObject />
-            </div>
-          </div>
-        </section> */}
           <div
             className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
             aria-hidden="true"

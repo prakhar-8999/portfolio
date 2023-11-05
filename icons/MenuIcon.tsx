@@ -7,7 +7,7 @@ const MenuIcon = () => {
         height="24"
         viewBox="0 0 24 24"
         className="hidden sm:block"
-        style={{fill: "rgba(0, 0, 0, 1)", transform: "", msFilter: ""}}
+        fill="none"
       >
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>
@@ -17,7 +17,8 @@ const MenuIcon = () => {
         height="24"
         viewBox="0 0 24 24"
         className="block sm:hidden"
-        style={{fill: "red", transform: "", msFilter: ""}}
+        // style={{fill: "red", transform: "", msFilter: ""}}
+        fill="none"
       >
         <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
       </svg>

@@ -1,4 +1,5 @@
 "use client";
+import RightArrow from "@/icons/RightArrow";
 import {services} from "@/utils/profile";
 import {motion} from "framer-motion";
 import Image from "next/image";
@@ -57,7 +58,12 @@ const Services = () => {
             ))}
           </div>
           <button
+<<<<<<< Updated upstream
             className="flex mx-auto mt-16 text-white bg-substitute border-0 py-2 px-8 focus:outline-none hover:bg-primary rounded text-lg"
+=======
+            className="flex mx-auto mt-16 text-black bg-primary border-0 py-2 px-8 focus:outline-none hover:bg-primary rounded text-lg z-50"
+            style={{zIndex: 1000}}
+>>>>>>> Stashed changes
             onClick={() =>
               setStart(
                 start === services.offeredServices.length
@@ -70,31 +76,9 @@ const Services = () => {
               ? "Show Less"
               : "Show More"}
             {start === services.offeredServices.length ? (
-              <svg
-                className="w-6 h-6 ml-2 -rotate-90"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
+              <RightArrow className="mt-2 -rotate-90" />
             ) : (
-              <svg
-                className="w-6 h-6 ml-2 rotate-90"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                strokeWidth="2"
-                fill="none"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M5 12h14"></path>
-                <path d="M12 5l7 7-7 7"></path>
-              </svg>
+              <RightArrow className="mt-2 rotate-90" />
             )}
           </button>
         </div>
