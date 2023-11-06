@@ -1,5 +1,6 @@
 "use client";
 import HeroSection from "@/components/HeroSection";
+import HireMe from "@/components/HireMe";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import ThingsIDo from "@/components/ThingsIDo";
@@ -26,6 +27,7 @@ export default function Home() {
       <Services />
       <ThingsIDo />
       <Projects />
+      <HireMe />
     </div>
   );
 }

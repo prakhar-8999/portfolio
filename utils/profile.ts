@@ -36,6 +36,10 @@ interface projectsInterface {
   }[];
 }
 
+interface hireMeInterface {
+  description: string;
+}
+
 const profile: profileInterface = {
   name: "Prakhar Porwal",
   description:
@@ -96,6 +100,7 @@ const navigation: navigationInterface[] = [
   {name: "Service", href: "#services"},
   {name: "Resume", href: "#resume"},
   {name: "Projects", href: "#projects"},
+  {name: "Hire Me", href: "#hireme"},
 ];
 
 const thingsIdo: thingsIdoInterface = {
@@ -163,4 +168,9 @@ const projects: projectsInterface = {
   ],
 };
 
-export {navigation, profile, projects, services, skills, thingsIdo};
+const hireMe: hireMeInterface = {
+  description:
+    "I'm in pursuit of assistance and mentorship to attain a significant career opportunity where I can apply my expertise and further my professional development.",
+};
+
+export {hireMe, navigation, profile, projects, services, skills, thingsIdo};
