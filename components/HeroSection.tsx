@@ -50,7 +50,7 @@ const HeroSection = () => {
                 />
               </p>
               <a
-                href="#contact"
+                href="#hireme"
                 className="flex underline underline-offset-[12px] text-2xl text-primary font-semibold"
               >
                 Connect with me <RightArrow className="ml-4 mt-[10px]" />
