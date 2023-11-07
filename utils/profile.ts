@@ -50,7 +50,7 @@ interface footerInterface {
   facebook: string;
   twitter: string;
   instagram: string;
-  linkeden: string;
+  linkedin: string;
   github: string;
 }
 
@@ -197,7 +197,7 @@ const footer: footerInterface = {
   twitter: "https://twitter.com/prakhar_IT09",
   facebook: "",
   instagram: "",
-  linkeden: "www.linkedin.com/in/prakhar-porwal-9b30a6237",
+  linkedin: "https://linkedin.com/in/prakhar-porwal-9b30a6237",
   github: "https://github.com/prakhar-8999",
 };
 

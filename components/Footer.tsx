@@ -100,7 +100,7 @@ const Footer = () => {
           </a>
           <a
             className="ml-3 text-gray-500"
-            href={footer.linkeden}
+            href={footer.linkedin}
             target="_blank"
           >
             <svg
