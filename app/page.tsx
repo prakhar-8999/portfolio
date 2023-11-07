@@ -7,6 +7,8 @@ import ThingsIDo from "@/components/ThingsIDo";
 import ToogleTheme from "@/components/ToggleTheme";
 import {webColors} from "@/libs/colors";
 import useColor from "@/utils/useColor";
+import {Toaster} from "react-hot-toast";
+
 import {useEffect} from "react";
 
 export default function Home() {
@@ -18,16 +20,19 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="px-4 md:px-24">
-      {/* <Header /> */}
-      <HeroSection />
-      <ToogleTheme />
-      {/* <ProjectsScreenShots /> */}
-      {/* <Skills /> */}
-      <Services />
-      <ThingsIDo />
-      <Projects />
-      <HireMe />
-    </div>
+    <>
+      <Toaster />
+      <div className="px-4 md:px-24">
+        {/* <Header /> */}
+        <HeroSection />
+        <ToogleTheme />
+        {/* <ProjectsScreenShots /> */}
+        {/* <Skills /> */}
+        <Services />
+        <ThingsIDo />
+        <Projects />
+        <HireMe />
+      </div>
+    </>
   );
 }

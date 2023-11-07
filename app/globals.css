@@ -138,3 +138,34 @@ body {
     transform: rotateX(0deg) rotateY(360deg) rotateZ(360deg);
   }
 }
+
+/* Spinner */
+
+.spinner {
+  width: 25px;
+  height: 25px;
+  display: grid;
+  animation: front-loader 4s infinite;
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  border: 4px solid;
+  border-radius: 50%;
+  border-color: #474bff #474bff #0000 #0000;
+  mix-blend-mode: darken;
+  animation: front-loader 1s infinite linear;
+}
+
+.spinner::after {
+  border-color: #0000 #0000 #dbdcef #dbdcef;
+  animation-direction: reverse;
+}
+
+@keyframes front-loader {
+  100% {
+    transform: rotate(1turn);
+  }
+}

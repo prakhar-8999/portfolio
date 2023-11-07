@@ -38,6 +38,9 @@ interface projectsInterface {
 
 interface hireMeInterface {
   description: string;
+  emailServiceId: string;
+  templateId: string;
+  publicKey: string;
 }
 
 const profile: profileInterface = {
@@ -171,6 +174,8 @@ const projects: projectsInterface = {
 const hireMe: hireMeInterface = {
   description:
     "I'm in pursuit of assistance and mentorship to attain a significant career opportunity where I can apply my expertise and further my professional development.",
+  emailServiceId: "service_pusfxjs",
+  templateId: "template_xsx2eag",
+  publicKey: "h7fYWQu7aTXR0glCg",
 };
-
 export {hireMe, navigation, profile, projects, services, skills, thingsIdo};
