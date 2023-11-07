@@ -32,7 +32,7 @@ const ContactForm = () => {
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
           setLoading(false);
-          toast.success("Your message has been recorded...");
+          toast.success("Your message has been recorded...", {duration: 3000});
           form.reset();
         },
         function (error) {
