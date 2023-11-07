@@ -43,6 +43,17 @@ interface hireMeInterface {
   publicKey: string;
 }
 
+interface footerInterface {
+  mainHeading: string;
+  tagLine: string;
+  mutedText: string;
+  facebook: string;
+  twitter: string;
+  instagram: string;
+  linkeden: string;
+  github: string;
+}
+
 const profile: profileInterface = {
   name: "Prakhar Porwal",
   description:
@@ -178,4 +189,25 @@ const hireMe: hireMeInterface = {
   templateId: "template_xsx2eag",
   publicKey: "h7fYWQu7aTXR0glCg",
 };
-export {hireMe, navigation, profile, projects, services, skills, thingsIdo};
+
+const footer: footerInterface = {
+  mainHeading: "Prakhar Porwal",
+  tagLine: "@ Made with love",
+  mutedText: "by Prakhar Porwal",
+  twitter: "https://twitter.com/prakhar_IT09",
+  facebook: "",
+  instagram: "",
+  linkeden: "www.linkedin.com/in/prakhar-porwal-9b30a6237",
+  github: "https://github.com/prakhar-8999",
+};
+
+export {
+  footer,
+  hireMe,
+  navigation,
+  profile,
+  projects,
+  services,
+  skills,
+  thingsIdo,
+};

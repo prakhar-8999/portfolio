@@ -9,6 +9,7 @@ import {webColors} from "@/libs/colors";
 import useColor from "@/utils/useColor";
 import {Toaster} from "react-hot-toast";
 
+import Footer from "@/components/Footer";
 import {useEffect} from "react";
 
 export default function Home() {
@@ -32,6 +33,7 @@ export default function Home() {
         <ThingsIDo />
         <Projects />
         <HireMe />
+        <Footer />
       </div>
     </>
   );

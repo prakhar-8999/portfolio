@@ -65,7 +65,7 @@ const ContactForm = () => {
                 required
                 name="fname"
                 id="fname"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm bg-gray-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 dark:text-white shadow-sm bg-gray-200 dark:bg-gray-700 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -82,7 +82,7 @@ const ContactForm = () => {
                 type="text"
                 name="lname"
                 id="lname"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm bg-gray-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 dark:text-white shadow-sm bg-gray-200 dark:bg-gray-700 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -100,7 +100,7 @@ const ContactForm = () => {
                 required
                 name="email"
                 id="email"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm bg-gray-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 dark:text-white shadow-sm bg-gray-200 dark:bg-gray-700 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -117,7 +117,7 @@ const ContactForm = () => {
                 required
                 name="phone"
                 id="phone"
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm bg-gray-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 dark:text-white shadow-sm bg-gray-200 dark:bg-gray-700 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
@@ -134,7 +134,7 @@ const ContactForm = () => {
                 required
                 id="message"
                 rows={4}
-                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm bg-gray-400 sm:text-sm sm:leading-6"
+                className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 dark:text-white shadow-sm bg-gray-200 dark:bg-gray-700 sm:text-sm sm:leading-6"
               ></textarea>
             </div>
           </div>
