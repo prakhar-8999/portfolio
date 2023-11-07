@@ -94,9 +94,9 @@ const ContactForm = () => {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm"
+            className="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-sm"
           >
-            Let talk
+            Let&apos;s talk
           </button>
         </div>
       </form>
