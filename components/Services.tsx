@@ -10,7 +10,7 @@ const Services = () => {
   const [start, setStart] = useState(services.onlyShow);
 
   return (
-    <div className="mt-48 sm:mt-0">
+    <div className="mt-48">
       <ContentHeader title="Services" id="services" />
       <div className="flex justify-center">
         <div className="w-full md:w-[600px] lg:w-[800px] xl:w-[900px] text-center">

@@ -10,6 +10,13 @@ interface navigationInterface {
 
 interface skillsInterface {
   description: string;
+  offeredSkills: {
+    name: string;
+    description: string;
+    image: string;
+    text: string;
+    skills: string[];
+  }[];
 }
 
 interface serviceInterface {
@@ -63,6 +70,39 @@ const profile: profileInterface = {
 const skills: skillsInterface = {
   description:
     "In this ever-evolving and dynamic landscape of work and technology, having a diverse skill set is paramount. My journey has been marked by a commitment to continuous learning and the cultivation of various competencies that allow me to thrive in diverse environments and contribute meaningfully to projects.",
+  offeredSkills: [
+    {
+      name: "Frontend",
+      image: "/frontend.webp",
+      description:
+        "I enjoy creating visually appealing and user-friendly interfaces, bringing ideas to life in the browser",
+      text: "Technologies",
+      skills: [
+        "Next JS",
+        "React JS",
+        "Vue JS",
+        "Nuxt JS",
+        "Tailwind CSS",
+        "Angular JS",
+      ],
+    },
+    {
+      name: "Backend",
+      image: "/backend.webp",
+      description:
+        "I enjoy solving complex problems through robust and scalable server-side solutions ensuring efficiency and accuracy.",
+      text: "Technologies",
+      skills: ["Django", "Mysql", "Python", "Rest Api", "Node Js", "Postgres"],
+    },
+    {
+      name: "DevOps",
+      image: "/devops.webp",
+      description:
+        "I prioritize quick product development and streamlined maintenance for existing deployments.",
+      text: "Technologies",
+      skills: ["VPS", "Docker", "CICD", "Git", "Nginx", "apache"],
+    },
+  ],
 };
 
 const services: serviceInterface = {
@@ -111,6 +151,7 @@ const services: serviceInterface = {
 
 const navigation: navigationInterface[] = [
   {name: "Home", href: "#home"},
+  {name: "Skills", href: "#skills"},
   {name: "Service", href: "#services"},
   {name: "Resume", href: "#resume"},
   {name: "Projects", href: "#projects"},

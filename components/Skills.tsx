@@ -1,4 +1,5 @@
 import {skills} from "@/utils/profile";
+import Image from "next/image";
 import ContentHeader from "./ContentHeader";
 
 const Skills = () => {
@@ -16,7 +17,45 @@ const Skills = () => {
         <div className="w-16 h-1 rounded-full bg-primary inline-flex"></div>
       </div>
 
-      <section className="text-gray-600 body-font">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 px-32">
+        {skills.offeredSkills.map((each, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center text-center shadow-md  rounded-3xl bg-white dark:bg-gray-800 cursor-pointer p-5 py-7 m-5"
+          >
+            <Image src={each.image} alt={each.name} width={80} height={80} />
+            <h1 className="font-bold text-primary text-xl xl:text-2xl underline mt-10 px-5 flex flex-col lg:flex-row items-start lg:items-center justify-between">
+              {each.name}
+            </h1>
+            <br />
+            <p className="px-5 font-normal text-gray-700 dark:text-gray-400">
+              {each.description}
+            </p>
+            {/* <h5 className="text-xl xl:text-2xl text-gray-900 dark:text-white underline font-semibold tracking-tight text-center mb-2">
+              {each.name}
+            </h5>
+            <p className="text-lg text-gray-500 text-center mb-3">
+              {each.description}
+            </p> */}
+            <p className="text-lg dark:text-white font-semibold mt-5 mb-1">
+              {each.text}
+            </p>
+            <ul className="grid grid-cols-3 md:grid-cols-3 lg:grid-cols-3 mb-5">
+              {each.skills.map((skill, index) => (
+                <span
+                  style={{transform: "none", transitionDuration: "2s"}}
+                  className="text-sm rounded-3xl dark:text-white bg-gray-200 dark:bg-slate-900 uppercase mr-1 mt-4 py-2 px-4"
+                  key={index}
+                >
+                  {skill}
+                </span>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      {/* <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
@@ -144,7 +183,7 @@ const Skills = () => {
             Button
           </button>
         </div>
-      </section>
+      </section> */}
     </>
   );
 };
