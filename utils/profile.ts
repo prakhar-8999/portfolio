@@ -174,7 +174,7 @@ const projects: projectsInterface = {
     {
       title: "TheCV",
       image: "/thecv.png",
-      url: "thecv.in",
+      url: "https://thecv.in",
       description:
         "The CV is a digital platform designed to provide users with the tools, resources, and functionalities necessary to create, showcase, and manage their own personalized digital portfolios.",
       techStack: ["Next Js, Tailwind CSS", "GO", "Mysql"],
