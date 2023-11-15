@@ -1,6 +1,6 @@
 "use client";
 
-const webColors = ["#e33e3e", "#22d3ee", "#818cf8", "#8b5cf6"];
+const webColors = ["#22d3ee", "#e33e3e", "#818cf8", "#8b5cf6"];
 
 const colors = {
   primary: webColors[Math.floor(Math.random() * webColors.length)],
