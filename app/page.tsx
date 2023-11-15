@@ -10,6 +10,7 @@ import useColor from "@/utils/useColor";
 import {Toaster} from "react-hot-toast";
 
 import Footer from "@/components/Footer";
+import Skills from "@/components/Skills";
 import {useEffect} from "react";
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
         <HeroSection />
         <ToogleTheme />
         {/* <ProjectsScreenShots /> */}
-        {/* <Skills /> */}
+        <Skills />
         <Services />
         <ThingsIDo />
         <Projects />

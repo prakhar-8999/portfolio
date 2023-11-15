@@ -1,13 +1,14 @@
 import {skills} from "@/utils/profile";
+import {motion} from "framer-motion";
 import Image from "next/image";
 import ContentHeader from "./ContentHeader";
 
 const Skills = () => {
   return (
     <>
-      <ContentHeader title="Skills" id="skills" />
+      <ContentHeader title="Skills" id="skills" className="mt-32" />
       <div className="flex justify-center">
-        <div className="w-[900px] text-center">
+        <div className="w-full md:w-[600px] lg:w-[800px] xl:w-[900px] text-center">
           <p className="leading-relaxed text-black dark:text-gray-400 font-medium">
             {skills.description}
           </p>
@@ -17,11 +18,18 @@ const Skills = () => {
         <div className="w-16 h-1 rounded-full bg-primary inline-flex"></div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 px-32">
+      <div className="grid grid-cols-1 md:grid-cols-3 mt-10 overflow-hidden">
         {skills.offeredSkills.map((each, index) => (
-          <div
+          <motion.div
             key={index}
-            className="flex flex-col justify-center items-center text-center shadow-md  rounded-3xl bg-white dark:bg-gray-800 cursor-pointer p-5 py-7 m-5"
+            className="flex flex-col justify-center items-center text-center shadow-md border dark:border-gray-800 rounded-3xl bg-white dark:bg-gray-800 cursor-pointer p-5 py-7 m-5"
+            whileHover={{scale: 1.05}}
+            initial={
+              index === 0 ? {x: -500} : index === 1 ? {scale: 0} : {x: 500}
+            }
+            whileInView={index === 1 ? {scale: 1} : {x: 0}}
+            exit={{scale: 0}}
+            transition={{delay: 0.1, times: 3}}
           >
             <Image src={each.image} alt={each.name} width={80} height={80} />
             <h1 className="font-bold text-primary text-xl xl:text-2xl underline mt-10 px-5 flex flex-col lg:flex-row items-start lg:items-center justify-between">
@@ -51,7 +59,7 @@ const Skills = () => {
                 </span>
               ))}
             </ul>
-          </div>
+          </motion.div>
         ))}
       </div>
 
