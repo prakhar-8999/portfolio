@@ -5,7 +5,7 @@ import ContentHeader from "./ContentHeader";
 const Skills = () => {
   return (
     <>
-      <ContentHeader title="Skills" id="skills" className="mt-32" />
+      <ContentHeader title="Skills" id="skills" className="mt-48" />
       <div className="flex justify-center">
         <div className="w-full md:w-[600px] lg:w-[800px] xl:w-[900px] text-center">
           <p className="leading-relaxed text-black dark:text-gray-400 font-medium">
