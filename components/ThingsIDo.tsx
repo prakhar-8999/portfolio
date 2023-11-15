@@ -34,9 +34,9 @@ const ThingsIDo = () => {
               <button
                 type="button"
                 onClick={() => window.open(thingsIdo.resumeLink)}
-                className="inline-flex items-center px-3 py-2 text-sm  text-center text-black font-semibold bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
+                className="inline-flex items-center px-3 py-2 text-sm text-center text-black font-semibold bg-primary rounded-lg hover:bg-primary focus:ring-4 focus:outline-none focus:ring-primary"
               >
-                Download
+                Download &nbsp;&nbsp;
                 <RightArrow />
               </button>
             </motion.div>

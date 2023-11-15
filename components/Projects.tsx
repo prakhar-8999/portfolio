@@ -39,11 +39,11 @@ const Projects = () => {
         >
           {start === projects.projectContent.length ? (
             <>
-              Show Less <RightArrow className="mt-2 -rotate-90" />
+              Show Less &nbsp;&nbsp; <RightArrow className="mt-2 -rotate-90" />
             </>
           ) : (
             <>
-              Show More <RightArrow className="mt-2 rotate-90" />
+              Show More &nbsp;&nbsp; <RightArrow className="mt-2 rotate-90" />
             </>
           )}
         </button>
