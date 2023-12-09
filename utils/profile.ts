@@ -173,7 +173,7 @@ const projects: projectsInterface = {
   onlyShow: 3,
   projectContent: [
     {
-      title: "Innotech-2K22",
+      title: "Innotech-2K23",
       image: "/innotech.png",
       url: "https://innotech.kiet.edu/",
       description:
@@ -218,7 +218,7 @@ const projects: projectsInterface = {
       url: "https://thecv.in",
       description:
         "The CV is a digital platform designed to provide users with the tools, resources, and functionalities necessary to create, showcase, and manage their own personalized digital portfolios.",
-      techStack: ["Next Js, Tailwind CSS", "GO", "Mysql"],
+      techStack: ["Next Js","Tailwind CSS", "GO", "Mysql"],
     },
   ],
 };
