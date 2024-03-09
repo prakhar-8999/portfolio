@@ -173,20 +173,19 @@ const projects: projectsInterface = {
   onlyShow: 3,
   projectContent: [
     {
-      title: "Innotech-2K23",
-      image: "/innotech.png",
-      url: "https://innotech.kiet.edu/",
+      title: "helppotech ( ERP - Solutions )",
+      image: "/helppotech.png",
+      url: "https://demo-erp.helppotech.com/",
       description:
-        "Innotech is the technical fest of our college. Me and my team has made the whole website for proper management of this event. This website includes : Team Creation, Project Allocation Reports, etc.",
-      techStack: ["React Js", "Tailwind CSS", "Django", "Mysql"],
-    },
-    {
-      title: "Pizza Ecommerce",
-      image: "/pizzafront.png",
-      url: "https://pizza-hum.vercel.app",
-      description:
-        "It refers to the digital platforms dedicated to ordering and delivering pizza online. It provides a convenient way to browse menus, customize their orders, and have their favorite pizzas delivered to their doorstep.",
-      techStack: ["Nuxt Js", "Tailwind CSS", "Django", "Sql lite", "PWA"],
+        "Our ERP system optimizes organizational management, centralizing HR, accounts, and employee tasks, automating processes, and promoting satisfaction, productivity, and efficiency.",
+      techStack: [
+        "Next Js",
+        "Tailwind CSS",
+        "Django",
+        "Postgresql",
+        "Docker",
+        "PWA",
+      ],
     },
     {
       title: "Student Portal",
@@ -205,6 +204,22 @@ const projects: projectsInterface = {
       ],
     },
     {
+      title: "Pizza Ecommerce",
+      image: "/pizzafront.png",
+      url: "https://pizza-hum.vercel.app",
+      description:
+        "It refers to the digital platforms dedicated to ordering and delivering pizza online. It provides a convenient way to browse menus, customize their orders, and have their favorite pizzas delivered to their doorstep.",
+      techStack: ["Nuxt Js", "Tailwind CSS", "Django", "Sql lite", "PWA"],
+    },
+    {
+      title: "Innotech-2K23",
+      image: "/innotech.png",
+      url: "https://innotech.kiet.edu/",
+      description:
+        "Innotech is the technical fest of our college. Me and my team has made the whole website for proper management of this event. This website includes : Team Creation, Project Allocation Reports, etc.",
+      techStack: ["React Js", "Tailwind CSS", "Django", "Mysql"],
+    },
+    {
       title: "ERP",
       image: "/erpPortal.png",
       url: "https://tech.kiet.edu",
@@ -218,7 +233,7 @@ const projects: projectsInterface = {
       url: "https://thecv.in",
       description:
         "The CV is a digital platform designed to provide users with the tools, resources, and functionalities necessary to create, showcase, and manage their own personalized digital portfolios.",
-      techStack: ["Next Js","Tailwind CSS", "GO", "Mysql"],
+      techStack: ["Next Js", "Tailwind CSS", "GO", "Mysql"],
     },
   ],
 };
