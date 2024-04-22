@@ -43,6 +43,20 @@ interface projectsInterface {
   }[];
 }
 
+interface experienceInterface {
+  name: string;
+  description: string;
+  content: {
+    title: string;
+    techStack?: string[];
+    description: string;
+    url: string;
+    image: string;
+    projectLink: string;
+    type: "experience";
+  }[];
+}
+
 interface hireMeInterface {
   description: string;
   emailServiceId: string;
@@ -152,11 +166,38 @@ const services: serviceInterface = {
 const navigation: navigationInterface[] = [
   {name: "Home", href: "#home"},
   {name: "Skills", href: "#skills"},
-  {name: "Service", href: "#services"},
+  // {name: "Service", href: "#services"},
+  {name: "Experience", href: "#experience"},
   {name: "Resume", href: "#resume"},
   {name: "Projects", href: "#projects"},
   {name: "Hire Me", href: "#hireme"},
 ];
+
+const experience: experienceInterface = {
+  name: "Experience",
+  description:
+    "Embarking on a Professional Journey: Reflecting on My Internship Experiences, Learning, Growth, and Professional Discovery Process to Inform Future Career Pathways.",
+  content: [
+    {
+      title: "Software Developer Intern",
+      image: "/teamerp.png",
+      url: "https://tech.kiet.edu/team-erp",
+      description:
+        "During my Team ERP internship, I gained practical experience in modules like Marks Monitoring, Hostel Management, Report Generation, Controller of Examination, Academics, and Accounts.",
+      type: "experience",
+      projectLink: "https://tech.kiet.edu",
+    },
+    {
+      title: "Software Intern",
+      image: "/amoghbuildtech.png",
+      url: "https://amoghbuildtech.com",
+      description:
+        "Throughout my internship in amoghbuildtech, I created an internal CRM platform aimed for managing customer interactions and overseeing leads throughout the entire customer journey.",
+      type: "experience",
+      projectLink: "https://crm.amoghbuildtech.com",
+    },
+  ],
+};
 
 const thingsIdo: thingsIdoInterface = {
   description:
@@ -258,6 +299,7 @@ const footer: footerInterface = {
 };
 
 export {
+  experience,
   footer,
   hireMe,
   navigation,

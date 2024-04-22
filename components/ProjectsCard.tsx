@@ -18,12 +18,16 @@ const ProjectsCard = ({
   url,
   techStack,
   description,
+  type,
+  projectLink,
 }: {
   image: string;
   title: string;
   url: string;
-  techStack: string[];
+  techStack?: string[];
   description: string;
+  projectLink?: string;
+  type?: "project" | "experience";
 }) => {
   return (
     <>
@@ -53,7 +57,7 @@ const ProjectsCard = ({
                       placeholder="blur"
                       blurDataURL="/link.png"
                     />
-                    Live Preview
+                    {type === "experience" ? "Visit Site" : "Live Preview"}
                   </button>
                 </div>
               </div>
@@ -78,7 +82,7 @@ const ProjectsCard = ({
         </p>
         <div className="flex flex-col justify-between gap-3 p-5 ">
           <div className="flex flex-wrap items-center gap-1">
-            {techStack!.map((tool, index) => {
+            {techStack?.map((tool, index) => {
               return (
                 <span
                   key={`${tool}-${index}`}
@@ -90,6 +94,19 @@ const ProjectsCard = ({
             })}
           </div>
         </div>
+        {type === "experience" && (
+          <>
+            <p className="px-5 font-normal text-gray-700 dark:text-gray-400 !mb-12">
+              Project Link -{" "}
+              <span
+                onClick={() => window.open(projectLink)}
+                className="underline cursor-pointer !text-blue-500 hover:!text-blue-600"
+              >
+                Visit Project Link
+              </span>
+            </p>
+          </>
+        )}
       </motion.div>
     </>
   );
