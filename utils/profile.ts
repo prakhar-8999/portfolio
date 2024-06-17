@@ -214,9 +214,9 @@ const projects: projectsInterface = {
   onlyShow: 3,
   projectContent: [
     {
-      title: "helppotech ( ERP - Solutions )",
-      image: "/helppotech.png",
-      url: "https://erp-front-swart.vercel.app/",
+      title: "kubejen ( ERP - Solutions )",
+      image: "/kubejen.png",
+      url: "https://kubejen-enigma-frontend.vercel.app/",
       description:
         "Our ERP system optimizes organizational management, centralizing HR, accounts, and employee tasks, automating processes, and promoting satisfaction, productivity, and efficiency.",
       techStack: [
