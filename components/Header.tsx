@@ -68,7 +68,7 @@ const Header = () => {
           </div>
           <div className="mt-6">
             {navigation.map((item) => (
-              <div key={item.name} className="mb-5">
+              <div key={item.name} className="mb-5" onClick={() => setMobileMenuOpen(false)}>
                 <a
                   href={item.href}
                   className="-mx-3 text-primary dark:text-white text-xl font-semibold"
