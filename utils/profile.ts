@@ -294,7 +294,7 @@ const footer: footerInterface = {
   twitter: "https://twitter.com/prakhar_IT09",
   facebook: "",
   instagram: "",
-  linkedin: "https://linkedin.com/in/prakhar-porwal-9b30a6237",
+  linkedin: "https://linkedin.com/in/prakharporwal01/",
   github: "https://github.com/prakhar-8999",
 };
 
