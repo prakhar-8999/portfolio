@@ -194,7 +194,7 @@ const experience: experienceInterface = {
       description:
         "Throughout my internship in amoghbuildtech, I created an internal CRM platform aimed for managing customer interactions and overseeing leads throughout the entire customer journey.",
       type: "experience",
-      projectLink: "https://crm.amoghbuildtech.com",
+      projectLink: "https://amoghbuildtech.com",
     },
   ],
 };
