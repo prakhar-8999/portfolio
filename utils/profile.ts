@@ -205,7 +205,7 @@ const thingsIdo: thingsIdoInterface = {
   resumeShortDescription:
     "A well-crafted resume conveys my strengths and career narrative effectively.",
   resumeLink:
-    "https://drive.google.com/file/d/164IoR1EulMLVlRexwE2wHR4AvqTsOIi-/view",
+    "https://drive.google.com/file/d/1SEpWB05clmUwc7ntwVn-60-Xxqqye80D/view",
 };
 
 const projects: projectsInterface = {
